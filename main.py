@@ -359,7 +359,7 @@ async def start(bot: Client, message: Message):
     kb = InlineKeyboardMarkup([
         [InlineKeyboardButton("📖 Help", callback_data="help")],
         [InlineKeyboardButton("💠 Plans", callback_data="plan")],
-        [InlineKeyboardButton("📢 Channel", url="https://t.me/ToonEncodesIndia")]
+        [InlineKeyboardButton("📢 Channel", url="https://t.me/Toonix_Inida")]
     ])
 
     user_mention = (
@@ -368,14 +368,14 @@ async def start(bot: Client, message: Message):
     )
 
     welcome_text = (
-        f"👋 Hi {user_mention}, welcome to [](https://t.me/)!\n\n"
+        f"👋 Hi {user_mention}, welcome to [](https://t.me/Toonix_India)!\n\n"
         "▶️ *How to use:*\n"
         "Send a message in this format:\n"
         "`http://video_link 00:00:00 Your Filename`\n\n"
         "⏰ *Timestamp* must be in `HH:MM:SS` format.\n"
         "📁 *Filename* is the name for your recorded clip.\n\n"
         "Use /help to see all commands and instructions.\n\n"
-        "_Powered by @TEMohanish_"
+        "_Powered by @Toonix_India"
     )
 
     await message.reply(
@@ -515,7 +515,7 @@ async def help_cmd(bot, message):
         "- Timestamp must be in hh:mm:ss format.\n"
         "- Bot sends file with auto thumbnail and duration.\n"
         "- Make sure filename doesn't use `/\\:*?\"<>|`\n\n"
-        "_Bot by @TEMohanish_",
+        "_Bot by @Toonix_India",
         disable_web_page_preview=True
     )
 
@@ -640,8 +640,8 @@ async def plan_cmd(bot, message):
     )
 
     markup = InlineKeyboardMarkup([
-        [InlineKeyboardButton("💬 Contact Owner", url="https://t.me/")],
-        [InlineKeyboardButton("📢 Updates", url="https://t.me/")]
+        [InlineKeyboardButton("💬 Contact Owner", url="https://t.me/Toonix_India")],
+        [InlineKeyboardButton("📢 Updates", url="https://t.me/Toonix_India")]
     ])
 
     await message.reply_text(text, reply_markup=markup)
@@ -908,5 +908,5 @@ async def start_bot():
 
 
 if __name__ == "__main__":
-    LOG.info("🚀 Starting RV Paid Recorder Bot...")
+    LOG.info("🚀 Starting Recorder Bot...")
     rvbot.run()
