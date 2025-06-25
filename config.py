@@ -41,7 +41,7 @@ MAX_DURATION_SEC = int(environ.get("MAX_DURATION", "1800"))  # 10 minutes
 STORE_CHANNEL_ID = int(environ.get("STORE_CHANNEL_ID", "-1002212854973"))
 
 # 🔗 Max number of active recording links allowed per user globally (0 = unlimited)
-LIMIT_LINK = int(environ.get("LIMIT_LINK", "5"))
+LIMIT_LINK = int(environ.get("LIMIT_LINK", "20"))
 
 # 👤 Max number of simultaneous recordings per individual user (0 = unlimited)
-USER_LIMIT_LINK = int(environ.get("USER_LIMIT_LINK", "1"))
+USER_LIMIT_LINK = int(environ.get("USER_LIMIT_LINK", "3"))
