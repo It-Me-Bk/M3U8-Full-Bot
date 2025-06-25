@@ -11,7 +11,7 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "8081507527:AAHVRI2z4Ygx8ja9qLEz5RohPkqkC1j
 OWNER_ID = int(environ.get("OWNER_ID", "5180174682"))  # Owner's Telegram user ID
 
 # ✅ Authorized users (comma-separated user IDs)
-AUTH_USERS = list(map(int, environ.get("AUTH_USERS", "5180174682").replace(",", " ").split()))
+AUTH_USERS = list(map(int, environ.get("AUTH_USERS", "5180174682,1856011609").replace(",", " ").split()))
 
 # 📂 Directory to store downloads
 DOWNLOAD_DIRECTORY = environ.get("DOWNLOAD_DIRECTORY", "./downloads")
